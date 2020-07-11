@@ -15,7 +15,7 @@
 
     <!-- Gazebo sim -->
     <include file="$(find gazebo_ros)/launch/empty_world.launch">
-        <arg name="world_name" value="$(find dragonfly)/worlds/iris.world"/>
+        <arg name="world_name" value="$(find dragonfly)/Firmware/Tools/sitl_gazebo/worlds/iris.world"/>
         <arg name="paused" value="false"/>
         <arg name="use_sim_time" value="true"/>
         <arg name="gui" value="true"/>
@@ -25,7 +25,7 @@
 
     <!-- gazebo model -->
     <arg name="sdf"
-        default="$(find dragonfly)/urdf/iris/iris.sdf"/>
+        default="$(find dragonfly)/Firmware/Tools/sitl_gazebo/models/iris/iris.sdf"/>
 
     <node name="vehicle_spawn" pkg="gazebo_ros" type="spawn_model" output="screen"
         args="-sdf -file $(arg sdf) -model dragonfly -x $(arg x) -y $(arg y) -z $(arg z) -R $(arg R) -P $(arg P) -Y $(arg Y)"/>
