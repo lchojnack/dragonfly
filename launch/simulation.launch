@@ -1,0 +1,12 @@
+<launch>
+
+    <!-- Gazebo sim -->
+    <include file="$(find dragonfly)/launch/gazebo.launch"/>
+
+    <!-- PX4 SITL -->
+    <include file="$(find dragonfly)/launch/px4_sitl.launch"/>
+
+    <!-- MAVROS -->
+    <include file="$(find dragonfly)/launch/mavros.launch"/>
+
+</launch>

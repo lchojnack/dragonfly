@@ -1,0 +1,8 @@
+<launch>
+
+    <node name="move_to_point"
+        pkg="dragonfly"
+        type="test_node"
+        required="true"/>
+
+</launch>

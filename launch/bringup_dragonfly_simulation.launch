@@ -1,0 +1,9 @@
+<launch>
+
+    <!-- Gazebo sim -->
+    <include file="$(find dragonfly)/launch/simulation.launch"/>
+
+    <!-- Application -->
+    <include file="$(find dragonfly)/launch/move_to_point.launch"/>
+
+</launch>
